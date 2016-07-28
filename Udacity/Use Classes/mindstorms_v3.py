@@ -1,9 +1,9 @@
 import turtle
 
 def draw_square(some_turtle):
-    for i in range(1, 5):
-        some_turtle.forward(100)
-        some_turtle.right(90)
+    for i in range(1, 50):
+        some_turtle.forward(50)
+        some_turtle.right(15)
 
 
 def draw_art():
@@ -14,7 +14,7 @@ def draw_art():
     brad.shape('turtle')
     brad.color('yellow')
     brad.speed(100)
-    for i in range(1,37):
+    for i in range(1,15):
         draw_square(brad)
         brad.right(10)
 
