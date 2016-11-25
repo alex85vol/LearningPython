@@ -2,6 +2,23 @@ import turtle
 
 window = turtle.Screen()
 window.bgcolor('black')
+
+def draw_square(some_turtle):
+    for i in range(1, 500, 10):
+        some_turtle.forward(50)
+        some_turtle.right(15)
+
+
+def draw_art():
+    brad = turtle.Turtle()
+    brad.shape('turtle')
+    brad.color('white')
+    brad.speed(100)
+    for i in range(1,450, 5):
+        draw_square(brad)
+        brad.right(10)
+
+
 def draw_shape(name, shape, color, speed):
 
     if name == 'brad':
@@ -44,6 +61,7 @@ def draw_shape(name, shape, color, speed):
         name.forward(100)
 
 def draw_art():
+    draw_square('brad')
     draw_shape('brad', 'turtle', 'yellow', 2)
     draw_shape('angie', 'arrow', 'blue', 2)
     draw_shape('jack', 'circle', 'green', 2)
@@ -51,8 +69,3 @@ def draw_art():
     window.exitonclick()
 
 draw_art()
-
-
-
-
-
